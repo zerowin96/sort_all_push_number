@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 19:15:44 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/02 17:31:06 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 20:57:45 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	sa(t_stack *a)
 {

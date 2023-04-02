@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 16:29:58 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/01 21:11:56 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 22:08:15 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 int	count_ra(t_stack *a, int data)
 {

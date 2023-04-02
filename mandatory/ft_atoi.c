@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 11:58:09 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/02 19:26:41 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 20:57:51 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 unsigned long long int	answer(unsigned long long int num, int buho)
 {

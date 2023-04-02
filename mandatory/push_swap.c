@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 13:31:50 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/04 21:47:37 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 20:58:13 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	division3(t_stack *a, t_stack *b)
 {
@@ -54,7 +54,7 @@ void	division2(t_stack *a, t_stack *b, int p3, int p0)
 	}
 }
 
-void	division(t_stack *a, t_stack *b)
+void	 division(t_stack *a, t_stack *b)
 {
 	int	p[4];
 	int	asize;
@@ -94,19 +94,13 @@ void	atob(t_stack *a, t_stack *b)
 	return ;
 }
 
-int	main(int argc, char *argv[])
+void	trance_string(int argc, char *argv[], t_stack *a)
 {
-	int		i;
-	int		len;
-	t_stack	*a;
-	t_stack	*b;
+	int	len;
+	int	i;
 
-	if (argc < 2)
-		return (0);
-	a = stack_init();
-	b = stack_init();
 	i = 1;
-	insert_check(argc, argv);
+	len = 0;
 	while (i < argc)
 	{
 		len = ft_strlen(argv[i]);
@@ -116,6 +110,19 @@ int	main(int argc, char *argv[])
 			trance(a, argv[i]);
 		i++;
 	}
+}
+
+int	main(int argc, char *argv[])
+{
+	t_stack	*a;
+	t_stack	*b;
+
+	if (argc < 2)
+		return (0);
+	a = stack_init();
+	b = stack_init();
+	insert_check(argc, argv);
+	trance_string(argc, argv, a);
 	samesame(a);
 	atob(a, b);
 	clear(a);

@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 15:28:45 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/02 15:00:58 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 20:58:18 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	rrrab(t_stack *a, t_stack *b, int *ra_c, int *rb_c)
 {

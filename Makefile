@@ -14,12 +14,16 @@ NAME = push_swap
 
 BO_NAME = checker
 
-SRCS = push_swap.c data.c data2.c ft_atoi.c get_clear.c greedy.c greedy_utils.c\
+SRC = push_swap.c data.c data2.c ft_atoi.c get_clear.c greedy.c greedy_utils.c\
 		hard.c linked_stack.c main_utils.c rrrrr.c quick_pivot.c\
 
-BNS_SRCS = checker_bonus.c get_next_line_bonus.c get_next_line_utils_bonus.c\
+SRCS = $(addprefix mandatory/, $(SRC))
+
+BNS_SRC = checker_bonus.c get_next_line_bonus.c get_next_line_utils_bonus.c\
 		stack_bonus.c utils_bonus.c data_bonus.c data2_bonus.c data3_bonus.c\
 		atoi_bonus.c get_clear_bonus.c\
+
+BNS_SRCS = $(addprefix bonus/, $(BNS_SRC))
 
 OBJS = $(SRCS:%.c=%.o)
 

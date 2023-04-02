@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 15:31:10 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/04 21:53:45 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 20:57:57 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 int	max0min1(t_stack *list, int num)
 {

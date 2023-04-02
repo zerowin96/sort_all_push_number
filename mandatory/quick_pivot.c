@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 19:20:37 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/02 14:59:16 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 20:58:16 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 int	pibot(t_stack *list, int num)
 {

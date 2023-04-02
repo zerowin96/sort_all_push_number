@@ -1,21 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   c_data3.c                                          :+:      :+:    :+:   */
+/*   get_clear_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/01 20:02:33 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/02 17:33:47 by yeham            ###   ########.fr       */
+/*   Created: 2022/10/01 20:00:31 by yeham             #+#    #+#             */
+/*   Updated: 2023/04/01 20:55:31 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
-void	c_rr(t_stack *a, t_stack *b)
+t_node	*getnode(int data)
 {
-	push_bottom(a, a->top->data);
-	pop_top(a);
-	push_bottom(b, b->top->data);
-	pop_top(b);
+	t_node	*new;
+
+	new = malloc(sizeof(t_node));
+	if (new == NULL)
+		return (0);
+	new->data = data;
+	new->next = NULL;
+	new->prev = NULL;
+	return (new);
+}
+
+void	clear(t_stack *list)
+{
+	while (list->size)
+		pop_top(list);
+	free(list);
 }

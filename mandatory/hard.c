@@ -6,11 +6,11 @@
 /*   By: yeham <yeham@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 14:51:12 by yeham             #+#    #+#             */
-/*   Updated: 2022/10/02 14:58:18 by yeham            ###   ########.fr       */
+/*   Updated: 2023/04/01 20:58:05 by yeham            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	harda(t_stack *a)
 {
